@@ -351,7 +351,7 @@ length of PATH (sans directory slashes) down to MAX-LEN."
                  (unless (= unpushed 0)
                    (concat ":" (number-to-string unpushed)))))
        'epe-git-face)))
-   (epe-colorize-with-face " λ" 'epe-symbol-face)
+   (epe-colorize-with-face " $" 'epe-symbol-face)
    (epe-colorize-with-face (if (= (user-uid) 0) "#" "") 'epe-sudo-symbol-face)
    " "))
 
@@ -403,7 +403,7 @@ length of PATH (sans directory slashes) down to MAX-LEN."
                  (unless (= (epe-git-unpushed-number) 0)
                    (concat ":" (number-to-string (epe-git-unpushed-number)))))
          'epe-git-face)))
-     (epe-colorize-with-face " λ" 'epe-symbol-face)
+     (epe-colorize-with-face " $" 'epe-symbol-face)
      (epe-colorize-with-face (if (= (user-uid) 0) "#" "") 'epe-sudo-symbol-face)
      " ")))
 
@@ -447,7 +447,7 @@ length of PATH (sans directory slashes) down to MAX-LEN."
 		 (unless (= unpushed 0)
 		   (concat ":" (number-to-string unpushed)))))
        'epe-git-face)))
-   (epe-colorize-with-face " λ" 'epe-symbol-face)
+   (epe-colorize-with-face " $" 'epe-symbol-face)
    (epe-colorize-with-face (if (= (user-uid) 0) "#" "") 'epe-sudo-symbol-face)
    " "))
 (provide 'eshell-prompt-extras)
